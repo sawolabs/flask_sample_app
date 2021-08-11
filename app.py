@@ -30,7 +30,7 @@ def login_page():
     setLoaded()
     setPayload(load if loaded<2 else '')
     sawo = {
-        "auth_key":"65d6a3fa-26e4-41e7-9ea4-87a1656123d2",
+        "auth_key":"785ha-hdjsdsd-799-ss345",
         "to":"login",
         "identifier":"phone_number_sms"
     }
