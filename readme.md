@@ -100,26 +100,26 @@ Steps:
    }
    ```
 
-Verifying Token
+   Verifying Token
 
-When the login is done on the webpage it sends the data to backend as payload to verify user, you can use verifyToken function, it returns a boolean.
+   When the login is done on the webpage it sends the data to backend as payload to verify user, you can use verifyToken function, it returns a boolean.
+   
+   BACKEND CODE IS SAME FOR DJANGO AND FLASK
 
-BACKEND CODE IS SAME FOR DJANGO AND FLASK
+   ```
+   from sawo import verifyToken
 
-```
-from sawo import verifyToken
+   #use the method provided by flask and django to receive the
+   #data from post request the use this function it will return
+   #True or False depending on user status
+   verifyToken(payload)
 
-#use the method provided by flask and django to receive the
-#data from post request the use this function it will return
-#True or False depending on user status
-verifyToken(payload)
+   //example
+   payload = <data from POST request>
+   if(verifyToken(payload)):
+   #do something
+   else:
+   #do something else
+   ```
 
-//example
-payload = <data from POST request>
-if(verifyToken(payload)):
-#do something
-else:
-#do something else
-```
-
-You are all set to use SAWO in your Flask Application
+   You are all set to use SAWO in your Flask Application
